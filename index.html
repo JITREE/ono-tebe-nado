@@ -13,10 +13,8 @@
     <header class="head">
       <nav class="nav" id="home">
         <ul class="navLink">
-          <li class="navLinkLi"><a href="#home" class="navHome">главная</a></li>
-          <li class="navLinkLi">○</li>
-          <li class="navLinkLi"><a href="#lots">посмотреть лоты</a></li>
-          <li class="navLinkLi">○</li>
+          <li class="navLinkLi navLinkHome"><a href="#home" class="navHome">главная</a></li>
+          <li class="navLinkLi"><a href="#lots">посмотреть лоты</a></li>  
           <li class="navLinkLi"><a href="#about">об аукционе</a></li>
         </ul>
       </nav>
@@ -35,26 +33,26 @@
       <section class="cover">
         <h1 class="coverTitle">
           <span class="coverTitle1">он о</span>
-          <span>теб е</span>
+          <span class="coverTitle2">теб е</span>
           <span class="coverTitle3">н адо</span>
         </h1>
         <p class="coverSubTitle">Аукцион вещей, в которые никто не верил</p>
         <button class="Btn">Сделать ставку</button>
       </section>
-      <section class="lots" id="lots">
+      <section class="lotsSection" id="lots">
         <h2 class="lotsTitle">лоты</h2>
-        <ul class="lot">
+        <ul class="lots">
           <li>
-            <a href="" class="lotLink">
-              <article class="lot1">
+            <a href="#lots" class="lotLink">
+              <article class="lot lotBg1">
                 <h3 class="lotTitle">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="lotDiscr">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
               </article>
             </a>
           </li>
           <li>
-            <a href="" class="lotLink">
-              <article class="lot2">
+            <a href="#lots" class="lotLink">
+              <article class="lot lotBg2">
                 <h3 class="lotTitle">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="lotDiscr">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. 
                   В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
@@ -63,8 +61,8 @@
             </a>
           </li>
           <li>
-            <a href="" class="lotLink">
-              <article class="lot3">
+            <a href="#lots" class="lotLink">
+              <article class="lot lotBg3">
                 <h3 class="lotTitle">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="lotDiscr">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. 
                   Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
@@ -72,7 +70,7 @@
             </a>
           </li>
         </ul>
-        <a class="lotsMore">Посмотреть больше</a>
+        <a href="#lots" class="lotsMore">Посмотреть больше</a>
       </section>
       <section class="about" id="about">
         <div class="logoBg">
