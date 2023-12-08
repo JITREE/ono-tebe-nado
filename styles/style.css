@@ -213,6 +213,7 @@
 .lots{
     list-style: none;
     display: grid;
+    min-height: 450px;
     margin: auto;
     margin-top: 5px;
     grid-template-columns: repeat(3, 1fr);
@@ -225,23 +226,20 @@
 
 .lot{
     background-size: 100%;
-    display: grid;
-    grid-template-rows: 102px 348px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
     width: 430px;
-    z-index: 0;
 }
 
 .lot::before {
     position: absolute;
     content: '';
-    grid-row: 1/3;
-    grid-column: 1/2;
-    top: 1306px;
-    /* left: 100; */
-    /* Не совсем понял из комментария, как можно сделать один класс с абсолютным позиционированием, при этом указывая в нем координаты, но ведь у разных карточек разные координаты*/
-    /* Проверил в браузерах Chrome Yandex Firefox Edge и Safari - везде отображает корректно  */
-    width: 430px;
-    height: 450px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color:rgba(0, 0, 0, .5);
     z-index: 0;
 }
@@ -259,9 +257,9 @@
 }
 
 .lotTitle{
-    margin: 50px 40px 0 40px;
-    grid-row: 1;
-    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
     color: #FFF;
     font-size: 22px;
     font-style: normal;
@@ -273,15 +271,12 @@
 }
 
 .lotDiscr{
-    grid-row: 2;
-    position: relative;
-    align-self: end;
+    margin: 0 40px 50px 40px;
     color: #FFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%; 
-    margin: 0 40px 50px 40px;
     z-index: 1;
 }
 
@@ -308,7 +303,6 @@
     margin-top: 182px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 240px 96px 119px;
 }
 
 .logoBg{
@@ -363,14 +357,13 @@
 /* Start of Footer */
 
 .foot{
-    margin-top: 210px;
+    margin-top: 180px;
     margin-bottom: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .navFoot{
-    margin-top: 4px;
     margin-left: 1px;
     display: flex;
     flex-direction: column;
